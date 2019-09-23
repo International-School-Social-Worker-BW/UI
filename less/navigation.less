@@ -1,0 +1,65 @@
+// Navigation Styles here
+
+// Below 270px, we'd need a hamburger menu!
+
+header {
+    margin-top: 0px;
+    padding-bottom:10px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    background: rgba(0,0,0,.8);  
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    max-width: 100%;
+
+    .hdr-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: @max-content-width;
+        align-items: center;
+
+        @media @mobile {
+            flex-direction: column;
+            // Alignment?
+        }
+    }
+
+    a, h1 { 
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    h1 {
+         margin-left: 20px;  // these don't help
+         padding-left: 20px;
+
+         @media @mobile {
+             margin-left: 0;
+             padding-left: 0;
+         }
+    }
+/*
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+*/
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        color: white;
+        @media @mobile {
+            width: 100%;
+            align-items: center;
+          }
+        a {
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+        a.active, a:hover {
+            color: orange;
+        }
+    }
+}
