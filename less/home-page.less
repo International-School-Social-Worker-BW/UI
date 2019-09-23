@@ -1,23 +1,33 @@
 .home {
 
-  .hero-image {
-    background-image: url("../img/stock/bg1.jpg");
-    background-color: #cccccc;
+  .parallax {
+    // Set background image first with its class, below
     height: 50vh;
     width: 100vw;
     max-width: 100%;
+    background-color: #cccccc; // Necessary?
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .bg1 { background-image: url("../img/stock/bg1.jpg"); }
+  .bg2 { background-image: url("../img/stock/bg2.jpg"); }
+  .bg3 { background-image: url("../img/stock/bg3.jpg"); }
+  .bg4 { background-image: url("../img/stock/bg4.jpg"); }
+  .bg5 { background-image: url("../img/stock/bg5.jpg"); }
+  .bg6 { background-image: url("../img/stock/bg6.jpg"); }
+  .bg7 { background-image: url("../img/stock/bg7.jpg"); }
+  .bg8 { background-image: url("../img/stock/bg7.jpg"); }
 
   .marquee-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    border-bottom: 2px dashed @navigation-border;
     max-width: @max-content-width;
+    min-height: 50vh;
 
     .wide-text-content {
       margin: 0 15px;
@@ -61,7 +71,6 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
     margin: 0 auto;
     
     @media @mobile {
@@ -83,7 +92,6 @@
     margin: 0 auto;
     max-width: @max-content-width;
     img {
-      border-radius: 10px;
       width: 100%;
     }
   }
@@ -92,7 +100,6 @@
     padding-top: 30px;
     width: 96%;
     margin: 0 auto;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
     max-width: @max-content-width;

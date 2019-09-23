@@ -242,6 +242,7 @@ header nav a:hover {
   margin: 0 auto;
   border-top: 1px solid darkgrey;
   padding-bottom: 0;
+  color: black;
   background: lightgray;
 }
 .footer p {
@@ -250,23 +251,47 @@ header nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .hero-image {
-  background-image: url("../img/stock/bg1.jpg");
-  background-color: #cccccc;
+.home .parallax {
   height: 50vh;
   width: 100vw;
   max-width: 100%;
+  background-color: #cccccc;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.home .bg1 {
+  background-image: url("../img/stock/bg1.jpg");
+}
+.home .bg2 {
+  background-image: url("../img/stock/bg2.jpg");
+}
+.home .bg3 {
+  background-image: url("../img/stock/bg3.jpg");
+}
+.home .bg4 {
+  background-image: url("../img/stock/bg4.jpg");
+}
+.home .bg5 {
+  background-image: url("../img/stock/bg5.jpg");
+}
+.home .bg6 {
+  background-image: url("../img/stock/bg6.jpg");
+}
+.home .bg7 {
+  background-image: url("../img/stock/bg7.jpg");
+}
+.home .bg8 {
+  background-image: url("../img/stock/bg7.jpg");
 }
 .home .marquee-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  border-bottom: 2px dashed #C0C0C0;
   max-width: 1000px;
+  min-height: 50vh;
 }
 .home .marquee-section .wide-text-content {
   margin: 0 15px;
@@ -310,7 +335,6 @@ header nav a:hover {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -331,14 +355,12 @@ header nav a:hover {
   max-width: 1000px;
 }
 .home .content-destination img {
-  border-radius: 10px;
   width: 100%;
 }
 .home .content-pick {
   padding-top: 30px;
   width: 96%;
   margin: 0 auto;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
