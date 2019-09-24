@@ -1,16 +1,21 @@
 // Mixins in here
  
-.cta-button(@bgcolor:"teal",@textcolor: "white") {
+.cta-button(@bgcolor: "orange", @textcolor: "white") {
     // height: 30px;
     padding: 10px;
     background-color: @bgcolor;
     color: @textcolor;
     font-size: 1.6rem;
-    text-align: center;    
+    font-weight: bold;
+    text-align: center;
     border-radius: 10px;
 
+    a:hover, a:active, a:visited { // Don't change text color on buttons
+        color: @textcolor;
+        text-decoration: none;
+    }
+
     &:hover {
-        // background-color: red;
         background-color: lighten(@bgcolor, 20%);
     }
 }
