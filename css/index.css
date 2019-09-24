@@ -132,10 +132,12 @@ table {
 html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro', sans-serif;
+  height: 100%;
 }
 body {
   background: black;
   color: white;
+  height: 100%;
 }
 h1,
 h2,
@@ -171,12 +173,16 @@ img {
 .container {
   max-width: 100%;
   width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 65px;
   margin: 0 auto;
 }
 header {
   margin-top: 0px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0.8);
   position: sticky;
   top: 0;
@@ -237,13 +243,16 @@ header nav a:hover {
   color: orange;
 }
 .footer {
+  position: absolute;
+  bottom: 0;
+  height: 65px;
   width: 100vw;
   max-width: 100%;
   margin: 0 auto;
-  border-top: 1px solid darkgrey;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 0;
-  color: black;
-  background: lightgray;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
 }
 .footer p {
   text-align: center;
@@ -371,7 +380,7 @@ header nav a:hover {
 }
 .home .content-pick .destination .btn {
   padding: 10px;
-  background-color: teal;
+  background-color: orange;
   color: white;
   font-size: 1.6rem;
   text-align: center;
@@ -379,7 +388,7 @@ header nav a:hover {
   width: 80%;
 }
 .home .content-pick .destination .btn:hover {
-  background-color: #00e6e6;
+  background-color: #ffc966;
 }
 body.team {
   color: black;

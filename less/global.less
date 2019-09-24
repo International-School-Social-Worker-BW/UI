@@ -5,6 +5,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro', sans-serif;
+  height: 100%; // For footer
 }
 
 
@@ -12,6 +13,8 @@ body {
   // font-family: 'Roboto', sans-serif;
   background: black;
   color: white;
+  height: 100%; // For footer
+  // padding-bottom: @footer-height;
 }
 
 
@@ -52,5 +55,8 @@ img {
 .container {
   max-width: 100%;
   width: 100%;
+  min-height: 100%; // For footer on short pages
+  position: relative;  // For footer on short pages
+  padding-bottom: @footer-height;
   margin: 0 auto;
 }
