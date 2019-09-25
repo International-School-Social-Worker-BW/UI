@@ -465,6 +465,12 @@ header nav a:hover {
 .home .content-pick .destination .btn:hover {
   background-color: #bee5f0;
 }
+.home ul {
+  font-size: 1.6rem;
+  list-style-type: square;
+  line-height: 2;
+  padding-left: 2.5rem;
+}
 .team .bg {
   height: 100vh;
   width: 100vw;
