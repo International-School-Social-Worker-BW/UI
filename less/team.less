@@ -1,6 +1,49 @@
+.team {
+
+  .bg {
+    // Set background image first with its class, below
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #cccccc; // Necessary?
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .bg1 { background-image: url("../img/stock/bg1.jpg"); }
+  .bg2 { background-image: url("../img/stock/bg2.jpg"); }
+  .bg3 { background-image: url("../img/stock/bg3.jpg"); }
+  .bg4 { background-image: url("../img/stock/bg4.jpg"); }
+  .bg5 { background-image: url("../img/stock/bg5.jpg"); }
+  .bg6 { background-image: url("../img/stock/bg6.jpg"); }
+  .bg7 { background-image: url("../img/stock/bg7.jpg"); }
+  .bg8 { background-image: url("../img/stock/bg7.jpg"); }
+
+  body {
+    color: red;
+  }
+}
+
 body.team {
     color: white;
-    background-color: @educell-dark-grey;
+    background-image: url("../img/stock/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+
+
+     // background-color: @educell-dark-grey;
+ }
+
+div.container.team {
+  background-color: rgba(0,0,0,.6);
 }
 
 .developer-list {
@@ -24,8 +67,8 @@ body.team {
         justify-content: flex-start;
         align-items: center;
 
-        border: 1px solid white;
-        border-radius: 8px;
+        border: @box-outline-thickness solid white;
+        border-radius: @box-border-radius;
         margin: 20px;
         width: 200px;
         max-width: 25%;
@@ -65,4 +108,7 @@ body.team {
         }
 
     } // .developer
+    .developer:hover {
+      background-color: rgba(0,0,0,.6);
+    }
 } // .developer-list

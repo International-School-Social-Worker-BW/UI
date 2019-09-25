@@ -302,6 +302,7 @@ header nav a:hover {
   background-image: url("../img/stock/bg7.jpg");
 }
 .home .marquee-section {
+  background: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,9 +411,56 @@ header nav a:hover {
 .home .content-pick .destination .btn:hover {
   background-color: #bee5f0;
 }
+.team .bg {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #cccccc;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team .bg1 {
+  background-image: url("../img/stock/bg1.jpg");
+}
+.team .bg2 {
+  background-image: url("../img/stock/bg2.jpg");
+}
+.team .bg3 {
+  background-image: url("../img/stock/bg3.jpg");
+}
+.team .bg4 {
+  background-image: url("../img/stock/bg4.jpg");
+}
+.team .bg5 {
+  background-image: url("../img/stock/bg5.jpg");
+}
+.team .bg6 {
+  background-image: url("../img/stock/bg6.jpg");
+}
+.team .bg7 {
+  background-image: url("../img/stock/bg7.jpg");
+}
+.team .bg8 {
+  background-image: url("../img/stock/bg7.jpg");
+}
+.team body {
+  color: red;
+}
 body.team {
   color: white;
-  background-color: #384148;
+  background-image: url("../img/stock/bg1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+div.container.team {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .developer-list {
   display: flex;
@@ -433,7 +481,7 @@ body.team {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 8px;
   margin: 20px;
   width: 200px;
@@ -470,4 +518,7 @@ body.team {
     width: 75%;
     margin: 2%;
   }
+}
+.developer-list .developer:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
