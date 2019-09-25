@@ -192,12 +192,6 @@ header {
   top: 0;
   width: 100vw;
   max-width: 100%;
-  /*
-    @media @mobile {
-        flex-direction: column;
-        align-items: center;
-    }
-*/
 }
 header .hdr-content {
   display: flex;
@@ -210,8 +204,11 @@ header .hdr-content {
     flex-direction: column;
   }
 }
+header .hdr-content h1 a {
+  text-decoration: none;
+  color: #6AC4DE;
+}
 header a {
-  text-transform: uppercase;
   color: white;
 }
 header h1 {
@@ -232,7 +229,7 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 30%;
   color: white;
 }
 @media (max-width: 500px) {
@@ -334,39 +331,8 @@ header nav a:hover {
 }
 .home .trans-layer {
   background-color: rgba(120, 120, 120, 0.4);
-  border: 2px solid yellowgreen;
   height: 100%;
   display: flex;
-  /*  .left-half {
-      background-color: rgba(120,120,120,.6);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      width: 50%;
-
-      @media @mobile {
-        width: 100%;
-        flex-direction: stretch;
-      }
-     }
-    .right-half {
-      background-color: rgba(120,120,120,.6);
-      justify-self: flex-start;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      width: 50%;
-
-      @media @mobile {
-        width: 100%;
-        flex-direction: stretch;
-      } 
-    }
-    */
 }
 .home .trans-layer .left-half {
   flex-direction: row;
@@ -375,7 +341,6 @@ header nav a:hover {
   flex-direction: row-reverse;
 }
 .home .trans-layer div.side-box {
-  border: 1px solid hotpink;
   background-color: rgba(120, 120, 120, 0.6);
   padding: 2rem;
   display: flex;
