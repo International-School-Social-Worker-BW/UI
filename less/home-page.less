@@ -1,5 +1,14 @@
 .home {
 
+  .btn {
+    a, a:visited, a:hover {
+      color: white;
+      text-decoration: none;
+    }
+    .cta-button(@button-bg, white);
+    max-width: 40%;
+  }
+
   .parallax {
     // Set background image first with its class, below
     height: 50vh;
@@ -21,8 +30,84 @@
   .bg7 { background-image: url("../img/stock/bg7.jpg"); }
   .bg8 { background-image: url("../img/stock/bg7.jpg"); }
 
+  
+
+  .left-half {
+    flex-direction: row;
+  }
+  .right-half {
+    flex-direction: row-reverse;
+  }
+
+
+    // .right-half {
+    //   flex-direction: row-reverse;
+    // }
+  .trans-layer {
+    background-color: rgba(120,120,120,.4);
+    border: 2px solid yellowgreen;
+    height: 100%;
+    display: flex;
+    // flex-direction: row;
+    // flex-direction: row-reverse;
+    .left-half {
+      flex-direction: row;
+    }
+  
+    .right-half {
+      flex-direction: row-reverse;
+    }
+    
+   /*  .left-half {
+      background-color: rgba(120,120,120,.6);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        flex-direction: stretch;
+      }
+     }
+    .right-half {
+      background-color: rgba(120,120,120,.6);
+      justify-self: flex-start;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        flex-direction: stretch;
+      } 
+    }
+    */
+
+    div.side-box {
+      border: 1px solid hotpink;
+      background-color: rgba(120,120,120,.6);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        flex-direction: stretch;
+      }
+    }
+  }
+
   .marquee-section {
-    background: rgba(0,0,0,.1);
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,7 +193,7 @@
 
     .destination {
       width: 30%;
-      margin-bottom: 30px ;
+      margin-bottom: 30px;
 
       .btn {
         a, a:visited, a:hover {
