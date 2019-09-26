@@ -243,6 +243,7 @@ header nav a {
   text-decoration: none;
   font-size: 2rem;
   padding: 0.5rem 0 1rem 0;
+  transition: color 0.7s;
 }
 header nav a.active,
 header nav a:hover {
@@ -274,6 +275,7 @@ header nav a:hover {
   font-weight: bold;
   text-align: center;
   border-radius: 10px;
+  transition: background-color 0.7s;
   max-width: 40%;
 }
 .home .btn a,
@@ -289,7 +291,14 @@ header nav a:hover {
   text-decoration: none;
 }
 .home .btn:hover {
-  background-color: #bee5f0;
+  background-color: #2999b9;
+}
+.home h1.welcome {
+  line-height: 0.5rem;
+}
+.home h2.welcome {
+  font-size: 1.6rem;
+  line-height: 0.5rem;
 }
 .home .parallax {
   height: 50vh;
@@ -438,11 +447,12 @@ header nav a:hover {
   justify-content: space-between;
   max-width: 1000px;
 }
-.home .content-pick .destination {
-  width: 30%;
+.home .content-pick .option {
+  border: 1px solid hotpink;
+  width: 48%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+.home .content-pick .option .btn {
   padding: 10px;
   background-color: #6AC4DE;
   color: white;
@@ -450,22 +460,23 @@ header nav a:hover {
   font-weight: bold;
   text-align: center;
   border-radius: 10px;
+  transition: background-color 0.7s;
   width: 80%;
 }
-.home .content-pick .destination .btn a,
-.home .content-pick .destination .btn a:visited,
-.home .content-pick .destination .btn a:hover {
+.home .content-pick .option .btn a,
+.home .content-pick .option .btn a:visited,
+.home .content-pick .option .btn a:hover {
   color: white;
   text-decoration: none;
 }
-.home .content-pick .destination .btn a:hover,
-.home .content-pick .destination .btn a:active,
-.home .content-pick .destination .btn a:visited {
+.home .content-pick .option .btn a:hover,
+.home .content-pick .option .btn a:active,
+.home .content-pick .option .btn a:visited {
   color: white;
   text-decoration: none;
 }
-.home .content-pick .destination .btn:hover {
-  background-color: #bee5f0;
+.home .content-pick .option .btn:hover {
+  background-color: #2999b9;
 }
 .home ul {
   font-size: 1.6rem;

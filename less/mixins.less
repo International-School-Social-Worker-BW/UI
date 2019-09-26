@@ -1,7 +1,6 @@
 // Mixins in here
  
 .cta-button(@bgcolor: "orange", @textcolor: "white") {
-    // height: 30px;
     padding: 10px;
     background-color: @bgcolor;
     color: @textcolor;
@@ -9,6 +8,7 @@
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
+    transition: background-color .7s;
 
     a:hover, a:active, a:visited { // Don't change text color on buttons
         color: @textcolor;
@@ -16,7 +16,7 @@
     }
 
     &:hover {
-        background-color: lighten(@bgcolor, 20%);
+        background-color: darken(@bgcolor, 20%);
         // cursor: pointer; // misleading when it's not really a link
     }
 }
