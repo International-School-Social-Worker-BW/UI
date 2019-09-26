@@ -341,7 +341,7 @@ header nav a:hover {
   flex-direction: row-reverse;
 }
 .home .trans-layer div.side-box {
-  background-color: rgba(120, 120, 120, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -547,6 +547,7 @@ div.container.team {
   width: 200px;
   max-width: 25%;
   min-width: 150px;
+  transition: background-color 1s;
 }
 .developer-list .developer h3 {
   padding-top: 10px;
