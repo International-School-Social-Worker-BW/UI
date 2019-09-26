@@ -3,6 +3,10 @@
 // Below 270px, we'd need a hamburger menu!
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+
     margin-top: 0px;
     border-bottom: 1px solid rgba(255,255,255,.2);
     // padding-bottom:10px;
@@ -14,6 +18,8 @@ header {
     max-width: 100%;
 
     .hdr-content {
+        width: 100%;
+
         display: flex;
         justify-content: space-between;
         max-width: @max-content-width;
@@ -30,25 +36,23 @@ header {
     }
 
     a {
-        // text-transform: uppercase;
         color: white;
     }
 
     h1 {
+        // border: 1px solid yellowgreen;
         text-transform: capitalize;
-        margin-left: 20px;  // these don't help
-        padding-left: 20px;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding: .5rem 2rem;
         color: @educell-blue;
 
         @media @mobile {
             margin-left: 0;
             padding-left: 0;
-         }
+        }
     }
 
     nav {
+        // border: 1px solid hotpink;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -60,7 +64,8 @@ header {
           }
         a {
             text-decoration: none;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            padding: .5rem 0 1rem 0;
         }
          
         a.active, a:hover {
