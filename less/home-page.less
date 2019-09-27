@@ -10,13 +10,21 @@
   }
 
   
-    h1.welcome {
-      line-height: .5rem;
+  h1.welcome {
+    line-height: .5rem;
+    @media @mobile {
+      font-size: 3rem;
+      line-height: 3rem;
     }
-    h2.welcome {
-      font-size: 1.6rem;
-      line-height: .5rem;
+  }
+  h2.welcome {
+    font-size: 1.6rem;
+    line-height: .5rem;
+    @media @mobile {
+      font-size: 1.2rem;
+      line-height: inherit;
     }
+  }
 
   .parallax {
     // Set background image first with its class, below
@@ -28,6 +36,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media @mobile {
+      height: 80vh;
+    }
   }
 
   .bg1 { background-image: url("../img/stock/bg1.jpg"); }
@@ -84,6 +96,16 @@
     max-width: @max-content-width;
     min-height: 50vh;
 
+    @media @mobile {
+      h2 {
+        text-align: center;
+        font-size: 2.6rem;
+      }
+      h4 {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
     .wide-text-content {
       margin: 0 15px;
       padding-top: 15px;
@@ -110,6 +132,7 @@
       }
       h2 {
         text-align: center;
+        font-size: 2.6rem;
       }
     }
 

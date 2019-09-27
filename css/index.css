@@ -296,9 +296,21 @@ header nav a:hover {
 .home h1.welcome {
   line-height: 0.5rem;
 }
+@media (max-width: 500px) {
+  .home h1.welcome {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
 .home h2.welcome {
   font-size: 1.6rem;
   line-height: 0.5rem;
+}
+@media (max-width: 500px) {
+  .home h2.welcome {
+    font-size: 1.2rem;
+    line-height: inherit;
+  }
 }
 .home .parallax {
   height: 50vh;
@@ -309,6 +321,11 @@ header nav a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 500px) {
+  .home .parallax {
+    height: 80vh;
+  }
 }
 .home .bg1 {
   background-image: url("../img/stock/bg1.jpg");
@@ -375,6 +392,16 @@ header nav a:hover {
   max-width: 1000px;
   min-height: 50vh;
 }
+@media (max-width: 500px) {
+  .home .marquee-section h2 {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  .home .marquee-section h4 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 .home .marquee-section .wide-text-content {
   margin: 0 15px;
   padding-top: 15px;
@@ -404,6 +431,7 @@ header nav a:hover {
 }
 .home .content-section .text-content h2 {
   text-align: center;
+  font-size: 2.6rem;
 }
 .home .content-section .img-content {
   width: 48%;
