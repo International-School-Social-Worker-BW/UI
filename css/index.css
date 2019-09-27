@@ -402,6 +402,9 @@ header nav a:hover {
     width: 96%;
   }
 }
+.home .content-section .text-content h2 {
+  text-align: center;
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -448,7 +451,6 @@ header nav a:hover {
   max-width: 1000px;
 }
 .home .content-pick .option {
-  border: 1px solid hotpink;
   width: 48%;
   margin-bottom: 30px;
 }
